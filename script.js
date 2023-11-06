@@ -54,8 +54,9 @@ btn5.addEventListener('click',()=>{
     res1.innerText=5
 })
 multBtn.addEventListener('click',()=>{
-    if(res2.innerText<=100){
-        res2.innerText=Number(res1.innerText)*res2.innerText
+    let multres = Number(res1.innerText)*res2.innerText
+    if(multres<=100){
+        res2.innerText=multres
 
     }else{
       alert.style.display='block'
